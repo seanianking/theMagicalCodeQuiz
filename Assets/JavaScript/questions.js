@@ -1,4 +1,4 @@
-//some Questions gathered from the w3schools JavaScript Quiz
+//some Questions gathered from or inspired by from the w3schools JavaScript Quiz at https://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript
 
 var questions = [
     {
