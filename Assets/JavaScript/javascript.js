@@ -1,27 +1,5 @@
 // var wordsPerMillisecond = prompt("How many words per millisecond would you like to read?");
-var questions = [
-    {
-      title: "1",
-      choices: ["A","B","C","D"],
-      answer: 0
-  },
-  {
-    title: "2",
-    choices: ["A","B","C","D"],
-    answer: 3
-  },
-  {
-    title: "3",
-    choices: ["A","B","C","D"],
-    answer: 2
-  },
-  {
-    title: "4",
-    choices: ["A","B","C","D"],
-    answer: 3
-  }
-  
-  ]
+
   
   var mainEl = document.getElementById("main");
   var readEl = document.getElementById("read");
