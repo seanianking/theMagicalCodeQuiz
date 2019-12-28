@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Quiz homepage</title>
+    <title>Quiz question page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,16 +13,20 @@
   <body>
     <nav class="navbar">
       <a href="highscore.html">View Highscores</a>
+      <h4 id="timer">Timer</h4>
     </nav>
       
     <div class="container">
       <h1 class="welcome">The Coding Quiz</h1>
-      <h2 id="countdown"></h1>
-        <p>The following quiz is all about the fundamentals of JavaScript testing basic knowledge.
-          Each question will have one correct answer, and giving an incorrect answer will lower the remaining time.
-          Your high score at the end will consist of the time that you have remaining after going through all five questions.
-        </p>
-        <a href="quiz.html"><button>quiz start</button></a>
+      <h3 id="main"></h3>
+        <div class="row">
+         <button type="button" class="btn btn-primary">A</button>
+         <button type="button" class="btn btn-warning">B</button>
+         <button type="button" class="btn btn-info">C</button>
+         <button type="button" class="btn btn-success">D</button>
+         </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <script src="Assets/JavaScript/javascript.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
