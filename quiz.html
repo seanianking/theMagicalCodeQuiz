@@ -12,13 +12,12 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="highscore.html">View Highscores</a>
       <h4 id="timer">Timer</h4>
     </nav>
-      
-    <div class="container">
+      <!-- This should display the questions immediately after loading from the welcome page -->
+    <div id="quiz-container" class="hide">
       <h1 class="welcome">The Coding Quiz</h1>
-      <h3 id="main"></h3>
+      <div id="question-display"></div>
         <div class="row">
          <button type="button" class="btn btn-primary">A</button>
          <button type="button" class="btn btn-warning">B</button>
@@ -26,7 +25,19 @@
          <button type="button" class="btn btn-success">D</button>
          </div>
         </div>
-    </div>
+        <!-- Score display -->
+          <div id="score-container" class="hide-score">
+            <h4 id='user-heading' class='hide'>Top 5 High Scores</h4>
+        <ol id='user-display'></ol>
+        <div id ="user-form" class="input-group input-group-lg hide">
+          <div class="input-group-prepend">
+            <span class="input-group-text font-weight-bold" id="inputGroup-sizing-lg">Name</span>
+          </div>
+            <input id ='user' type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <button id="submit-btn" class="submit-button btn hide">Submit Score</button>
+          </div>
+    
     <!-- Optional JavaScript -->
     <script src="Assets/JavaScript/javascript.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
