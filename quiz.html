@@ -14,26 +14,25 @@
     <nav class="navbar">
       <h4 id="timer">Timer</h4>
     </nav>
-      <!-- This should display the questions immediately after loading from the welcome page -->
-    <div id="quiz-container" class="hide">
+      <!-- This should display the questions immediately after loading from the landing page -->
+    <div id="quiz-container">
       <h1 class="welcome">The Coding Quiz</h1>
-      <div id="question-display"></div>
-        <div class="row">
+      <div id="question-display" class="hide">
          <button type="button" class="btn btn-primary">A</button>
          <button type="button" class="btn btn-warning">B</button>
          <button type="button" class="btn btn-info">C</button>
          <button type="button" class="btn btn-success">D</button>
-         </div>
-        </div>
+      </div>
+    </div>
+    <br>
         <!-- Score display -->
-          <div id="score-container" class="hide-score">
-            <h4 id='user-heading' class='hide'>Top 5 High Scores</h4>
-        <ol id='user-display'></ol>
+            <h4 id="score-heading" class="hide">Top 5 High Scores</h4>
+        <ol id="score-display"></ol>
         <div id ="user-form" class="input-group input-group-lg hide">
           <div class="input-group-prepend">
             <span class="input-group-text font-weight-bold" id="inputGroup-sizing-lg">Name</span>
           </div>
-            <input id ='user' type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input id ="user" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
         <button id="submit-btn" class="submit-button btn hide">Submit Score</button>
           </div>
