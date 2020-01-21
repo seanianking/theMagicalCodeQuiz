@@ -6,11 +6,12 @@
   var scoreDisplay = document.getElementById("score-display");
   var submitBtn = document.getElementById("submit-btn");
 
+  var finalScore = 0;
   var questionIndex = 0;
   var currentQuestion = questions[questionIndex];
   var score = 0;
   var interval;
-  
+
   //Event Listeners
 
   submitBtn.addEventListener("click");
