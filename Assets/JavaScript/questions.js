@@ -4,27 +4,47 @@ var questions = [
     {
       title: "Inside which HTML element do you put the JavaScript",
       choices: ["<script>","<br>","h1","javascript"],
-      answer: 0
+      answer: "<script>"
   },
   {
     title: "How would you write 'Hello World' in an alert box",
     choices: ["alertBox('Hello World')","prompt('Hello World')","msg('Hello World')","alert('Hello World')"],
-    answer: 3
+    answer: "alert('Hello World')"
   },
   {
     title: "Which symbol do you use to put a comment in JavaScript",
     choices: ["||","&&","//","{}"],
-    answer: 2
+    answer: "//"
   },
   {
     title: "What syntax would you use to call myFunction?",
     choices: ["myFunction<>","myFunction{}","myFunction[]","myFunction()"],
-    answer: 3
+    answer: "myFunction()"
   },
   {
     title: "Which operator is used to assign a value to a variable?",
     choices: ["*","=","%","+"],
-    answer: 1
+    answer: "="
   }
   
   ];
+  //Checks local storage for existing leaderboard
+if (localStorage.getItem('leaderboard') != null) {
+  leaderboard = JSON.parse(localStorage.getItem('leaderboard'));
+} else {
+var leaderboard = [];
+}
+
+//Dom elements
+var qHolderEl = $('#question-holder');
+var startEl = $('#start');
+var counterEl = $('#counterEl');
+var navEl = $('#nav-btns');
+var scoreEl = $('#scoreEl');
+var viewScoresEl = $('#viewScores');
+var scoreSpaceEl = $('#scoreSpace');
+var counter = (questions.length) * 15
+var score = 0;
+var currentPage = 0;
+var totalPages = questions.length;
+var quizFinished = false;
