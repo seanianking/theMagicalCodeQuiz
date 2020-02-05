@@ -48,3 +48,34 @@ var score = 0;
 var currentPage = 0;
 var totalPages = questions.length;
 var quizFinished = false;
+
+//Navigation buttons
+//Start button
+startEl.click(function() {
+  timer();
+  startQuiz();
+});
+
+//View Scores button
+qHolderEl.on('click','.viewScores', function(){
+  renderScores();
+});
+
+//Back button
+navEl.on('click', '.back', function() {
+  scoreSpaceEl.empty();
+  navEl.empty();
+  startEl.removeClass('hide');
+  viewScoresEl.removeClass('hide');
+});
+
+//Restart button
+navEl.on('click', '.restart', function () {
+  currentPage = 0;
+  counter = (questions.length) * 15;
+  quizFinished = false;
+  scoreSpaceEl.empty();
+  navEl.empty();
+  timer();
+  startQuiz();
+});
