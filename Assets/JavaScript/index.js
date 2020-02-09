@@ -119,3 +119,55 @@ qHolderEl.on('click','.answer', function() {
       },1200);
 }
 });
+
+//Timer
+function timer() {
+  counterEl.text(`Time: ${counter}`);
+  var timer = setInterval(function() {
+      counter --
+      counterEl.text(`Time: ${counter}`);
+      if (counter <= 0) {
+          //If time runs out game over!
+          clearInterval(timer);
+              qHolderEl.empty();
+              var gameOver = $('<div class="text-center results"></div>');
+              gameOver.text('You Just Lost');
+              qHolderEl.append(gameOver);
+              return;
+          //If quiz finishes, stop timer
+      } if (quizFinished === true) {
+          clearInterval(timer);
+          return;
+      }
+  }, 1000);
+}
+
+//Start quiz
+function startQuiz () {
+  //Hide start and score buttons
+  startEl.addClass('hide');
+  viewScoresEl.addClass('hide');
+
+  renderQuestions();
+}
+
+//Render  questions
+function renderQuestions () {
+  qHolderEl.empty();
+  //If questions are done, dont try to render nonexistent questions
+  scoreEl.text(`Score: ${score}`);
+  if (currentPage >= totalPages) {
+      endQuiz();
+      return;
+  }
+  //Makes a title and all the questions, appends to DOM
+  var createQuestion = $('<div class="title bg-warning pt-1 pb-1"></div>');
+  createQuestion.text(questions[currentPage].title);
+  qHolderEl.append(createQuestion);
+  for (var i = 0; i < questions[currentPage].choices.length; i++) {
+      var createAnswer = $('<button type="button" class="btn btn-block btn-primary answer"></button>');
+      createAnswer.text(`${questions[currentPage].choices[i]}`);
+      createAnswer.attr("data-selection", `${questions[currentPage].choices[i]}`);
+      qHolderEl.append(createAnswer);
+  }
+}
