@@ -41,7 +41,7 @@ var startEl = $('#start');
 var counterEl = $('#counterEl');
 var navEl = $('#nav-btns');
 var scoreEl = $('#scoreEl');
-var scoreView = $('#showScores');
+var showScoresEl = $('#showScores');
 var scoreSpaceEl = $('#scoreSpace');
 var counter = (questions.length) * 15
 var score = 0;
@@ -236,7 +236,7 @@ function showScores() {
 };
 
 //When enter is pressed on name input
-qHolderEl.on('keyup','input', function(e){
+qHolderEl.on('keydown','input', function(e){
   if (e.which === 13) {
       e.preventDefault();
       var finalScore = +counter + +score;
