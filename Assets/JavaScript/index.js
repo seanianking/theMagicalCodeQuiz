@@ -239,7 +239,7 @@ function showScores() {
 qHolderEl.on('keyup','input', function(e){
   if (e.which === 13) {
       e.preventDefault();
-      var finalScore = +counter + +score +1;
+      var finalScore = +counter + +score;
       var userName = $(this).val();
       //store name and scores inside object
       var  userData = {'name':`${userName}`,'score':`${finalScore}`};
