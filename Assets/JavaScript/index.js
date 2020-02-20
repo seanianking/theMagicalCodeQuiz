@@ -66,7 +66,7 @@ navEl.on('click', '.back', function() {
   scoreSpaceEl.empty();
   navEl.empty();
   startEl.removeClass('hide');
-  scoreView.removeClass('hide');
+  showScores.removeClass('hide');
 });
 
 //Restart button
@@ -147,9 +147,10 @@ function timer() {
 function startQuiz () {
   //Hide start and score buttons
   startEl.addClass('hide');
-  scoreView.addClass('hide');
-
   renderQuestions();
+  showScores.addClass('hide');
+
+  
 };
 
 //Render  questions
