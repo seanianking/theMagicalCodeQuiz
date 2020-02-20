@@ -66,7 +66,7 @@ navEl.on('click', '.back', function() {
   scoreSpaceEl.empty();
   navEl.empty();
   startEl.removeClass('hide');
-  showScores.removeClass('hide');
+  showScoresEl.removeClass('hide');
 });
 
 //Restart button
@@ -75,6 +75,7 @@ navEl.on('click', '.restart', function () {
   counter = (questions.length) * 15;
   quizFinished = false;
   scoreSpaceEl.empty();
+  console.log(scoreSpaceEl);
   navEl.empty();
   timer();
   startQuiz();
@@ -148,7 +149,7 @@ function startQuiz () {
   //Hide start and score buttons
   startEl.addClass('hide');
   renderQuestions();
-  showScores.addClass('hide');
+  showScoresEl.addClass('hide');
 
   
 };
@@ -198,6 +199,8 @@ function endQuiz() {
   var createInput = $('<input type="text" class="inputbtn"><');
   qHolderEl.append(inputLabel);
   qHolderEl.append(createInput);
+  //reset score to 0
+  score = 0;
 };
 
 //Render scoreboard
