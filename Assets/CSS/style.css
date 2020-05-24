@@ -1,4 +1,6 @@
 
   .hide {
     display: none !important;
-  }
+  } 
+
+  /* this comment is added to allow a commit to be saved and to restore the project correctly in the repo */

@@ -1,6 +1,6 @@
 //some Questions gathered from or inspired by from the w3schools JavaScript Quiz at https://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript
 
-var questions = [
+var questions = [ 
     {
       title: "Inside which HTML element do you put the JavaScript",
       choices: ["<script>","<br>","h1","javascript"],
@@ -258,3 +258,6 @@ qHolderEl.on('keydown','input', function(e){
   }
   return;
 });
+
+
+//this comment is added to allow a commit to be saved and to restore the project correctly in the repo
