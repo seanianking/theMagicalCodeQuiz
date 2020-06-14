@@ -17,31 +17,22 @@ function BootstrapCarousel() {
                          </div >
                 </div >
             </div >
-            < div className='container-fluid' >
+            < div className='container-fluid ' >
                 < Carousel >
-                    < Carousel.Item style={{ 'height': "300px" }} >
-                        < img style={{ 'height': "300px" }}
+                    < Carousel.Item>
+                        < img fluid
                             className="d-block w-100"
                             src={HC1} />
-                        < Carousel.Caption >
-                            < h3 > First Demo </h3 >
-                        </Carousel.Caption >
                     </Carousel.Item >
-                    < Carousel.Item style={{ 'height': "300px" }}>
-                        < img style={{ 'height': "300px" }}
+                    < Carousel.Item>
+                        < img fluid
                             className="d-block w-100"
                             src={HC2} />
-                        < Carousel.Caption >
-                            < h3 > Second Demo</h3 >
-                        </Carousel.Caption >
                     </Carousel.Item >
-                    < Carousel.Item style={{ 'height': "300px" }}>
-                        < img style={{ 'height': "300px" }}
+                    < Carousel.Item>
+                        < img fluid
                             className="d-block w-100"
                             src={HC3} />
-                        < Carousel.Caption >
-                            < h3 > Third Demo</h3 >
-                        </Carousel.Caption >
                     </Carousel.Item >
                 </Carousel >
             </div >
