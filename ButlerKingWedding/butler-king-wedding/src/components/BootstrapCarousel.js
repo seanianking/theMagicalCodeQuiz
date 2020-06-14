@@ -1,7 +1,10 @@
-
 import React from 'react'
-
 import Carousel from 'react-bootstrap/Carousel'
+import HC1 from '../assets/images/HC1.JPG'
+import HC2 from '../assets/images/HC2.JPG'
+import HC3 from '../assets/images/HC3.JPG'
+
+
 
 function BootstrapCarousel() {
 
@@ -19,7 +22,7 @@ function BootstrapCarousel() {
                     < Carousel.Item style={{ 'height': "300px" }} >
                         < img style={{ 'height': "300px" }}
                             className="d-block w-100"
-                            src={'assets/img/img2.jpg'} />
+                            src={HC1} />
                         < Carousel.Caption >
                             < h3 > First Demo </h3 >
                         </Carousel.Caption >
@@ -27,7 +30,7 @@ function BootstrapCarousel() {
                     < Carousel.Item style={{ 'height': "300px" }}>
                         < img style={{ 'height': "300px" }}
                             className="d-block w-100"
-                            src={'assets/img/img1.jpg'} />
+                            src={HC2} />
                         < Carousel.Caption >
                             < h3 > Second Demo</h3 >
                         </Carousel.Caption >
@@ -35,7 +38,7 @@ function BootstrapCarousel() {
                     < Carousel.Item style={{ 'height': "300px" }}>
                         < img style={{ 'height': "300px" }}
                             className="d-block w-100"
-                            src={'assets/img/img3.jpg'} />
+                            src={HC3} />
                         < Carousel.Caption >
                             < h3 > Third Demo</h3 >
                         </Carousel.Caption >
