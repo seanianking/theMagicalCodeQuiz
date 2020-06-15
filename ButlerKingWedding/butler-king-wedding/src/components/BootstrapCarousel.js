@@ -3,6 +3,8 @@ import Carousel from 'react-bootstrap/Carousel'
 import HC1 from '../assets/images/HC1.JPG'
 import HC2 from '../assets/images/HC2.JPG'
 import HC3 from '../assets/images/HC3.JPG'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 
@@ -10,14 +12,8 @@ function BootstrapCarousel() {
 
     return (
         < div >
-            < div className='container-fluid' >
-                < div className="row title" style={{ marginBottom: "20px" }} >
-                    < div class="col-sm-12 btn btn-warning" >
-                        How To Use Bootstrap Carousel In ReactJS
-                         </div >
-                </div >
-            </div >
-            < div className='container-fluid ' >
+            <Row>
+                <Col md={{span: 8, offset: 2}}>
                 < Carousel >
                     < Carousel.Item>
                         < img fluid
@@ -35,8 +31,10 @@ function BootstrapCarousel() {
                             src={HC3} />
                     </Carousel.Item >
                 </Carousel >
-            </div >
+                </Col>
+            </Row>
         </div >
+
     )
 }
 
