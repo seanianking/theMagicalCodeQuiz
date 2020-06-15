@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import StateCounter from './components/StateCounter';
+import Playground from './components/Playground';
 import Name from './components/Name';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <h1>Painter</h1>
       <Name/>
-      <StateCounter/>
+      <Playground/>
 
     </div>
   );

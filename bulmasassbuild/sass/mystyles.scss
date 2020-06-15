@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+// Set your brand colors
+$blue: #2591D0;
+$lightblue: #33C1EB;
+$darkblue: #0F5687;
+$yellow: #FBAE40;
+$green: #34B93A;
+$plum:#471D4E;
+$gray: #646660;
+$off-white: #f9fafc;
+
+
+// Update Bulma's global variables
+$family-primary: 'Varela Round', sans-serif;
+$primary: $blue;
+$info: $lightblue;
+$success: $darkblue;
+$warning: $yellow;
+$danger: $plum;
+$light: $off-white;
+$link: $gray;
+
+
+
+// Update some of Bulma's component variables
+$control-border-width: 3px;
+$input-border-color: transparent;
+$input-shadow: none;
+$tooltip-radius: 6px;
+
+// Import only what you need from Bulma
+
+@import '../node_modules/bulma/bulma.sass';
+

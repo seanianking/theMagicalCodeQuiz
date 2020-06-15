@@ -17,17 +17,17 @@ function BootstrapCarousel() {
                 < Carousel >
                     < Carousel.Item>
                         < img fluid
-                            className="d-block w-100"
+                            className="d-block w-100 border border-success rounded-lg"
                             src={HC1} />
                     </Carousel.Item >
                     < Carousel.Item>
                         < img fluid
-                            className="d-block w-100"
+                            className="d-block w-100 border border-success rounded-lg"
                             src={HC2} />
                     </Carousel.Item >
                     < Carousel.Item>
                         < img fluid
-                            className="d-block w-100"
+                            className="d-block w-100 border border-success rounded-lg"
                             src={HC3} />
                     </Carousel.Item >
                 </Carousel >
