@@ -13,7 +13,7 @@ function BootstrapCarousel() {
     return (
         < div >
             <Row>
-                <Col md={{span: 8, offset: 2}}>
+                <Col md={{span: 10, offset: 1}}>
                 < Carousel >
                     < Carousel.Item>
                         < img fluid

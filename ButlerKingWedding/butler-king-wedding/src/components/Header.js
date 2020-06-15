@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 
 function Header() {
     return (
-        <div>
+        <div className="pt-3 pb-3 bg-warning">
             <Container fluid>
                 <Row>
                     <Col>

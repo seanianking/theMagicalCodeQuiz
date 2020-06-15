@@ -4,7 +4,7 @@ import BootstrapCarousel from './BootstrapCarousel'
 
 function jumbotron() {
     return (
-        <div>
+        <div className="border-top border-bottom border-success pt-5 pb-5 mb-5 bg-primary">
             <BootstrapCarousel/>
         </div>
     )
